@@ -1,20 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" th:replace="~{base ::parent}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
 </head>
 <body>
-     <h1>This is about page</h1>
-     <hr />
-    <!-- using fragments   -->
-     <div  class="host-tag" th:replace="~{base :: parent(~{::section})}" >
-         <section>
-             <h1>This is Dynamic content part</h1>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque natus nihil nisi officia perferendis quos ratione veniam. Corporis, nemo saepe?</p>
-             <button>click on dynamic content</button>
-         </section>
-     </div>
+
 </body>
 </html>
