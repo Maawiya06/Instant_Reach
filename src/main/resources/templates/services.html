@@ -1,16 +1,22 @@
 <!doctype html>
-<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
+
 <head>
     <title>Service Page</title>
 </head>
+
 <body>
-<section id="content">
-    <h1>Welcome to services page</h1>
+
+<div id="content">
+    <h1>Welcome to Services page</h1>
     <h2>Services Offered by Instant_Reach</h2>
-</section>
+</div>
 
 <script>
     console.log("services page");
 </script>
+
 </body>
 </html>
